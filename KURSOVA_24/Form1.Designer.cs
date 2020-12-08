@@ -443,12 +443,10 @@
             // lAndT
             // 
             this.lAndT.AutoSize = true;
-            this.lAndT.Checked = true;
             this.lAndT.Location = new System.Drawing.Point(6, 19);
             this.lAndT.Name = "lAndT";
             this.lAndT.Size = new System.Drawing.Size(97, 17);
             this.lAndT.TabIndex = 13;
-            this.lAndT.TabStop = true;
             this.lAndT.Text = "light and trucks";
             this.lAndT.UseVisualStyleBackColor = true;
             this.lAndT.CheckedChanged += new System.EventHandler(this.lAndT_CheckedChanged);
@@ -488,12 +486,10 @@
             // size
             // 
             this.size.AutoSize = true;
-            this.size.Checked = true;
             this.size.Location = new System.Drawing.Point(6, 19);
             this.size.Name = "size";
             this.size.Size = new System.Drawing.Size(87, 17);
             this.size.TabIndex = 13;
-            this.size.TabStop = true;
             this.size.Text = "fuel tank size";
             this.size.UseVisualStyleBackColor = true;
             this.size.CheckedChanged += new System.EventHandler(this.size_CheckedChanged);
