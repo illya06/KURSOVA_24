@@ -9,6 +9,7 @@ namespace KURSOVA_24
     class Lightweight
     {
         public int CarType;
+        public int weight;
         Lightweight()
         {
             CarType = 0;

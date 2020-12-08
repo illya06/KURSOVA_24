@@ -69,7 +69,14 @@ namespace KURSOVA_24
 
         void sort(Car[] arr)
         {
-            mergesort(ref arr, 0, arr.Length - 1);
+            if(down.Checked || up.Checked)
+            {
+                mergesort(ref arr, 0, arr.Length - 1);
+            }
+            else
+            {
+                MessageBox.Show("Please, choose sort`s direction");
+            }
         }
 
         //START_OF_MERGE
@@ -272,12 +279,19 @@ namespace KURSOVA_24
         private void sortByMark_Click(object sender, EventArgs e)
         {
             if(sortC.Checked || sortM.Checked || sortT.Checked)
-                sort(list);
-            dataGridView1.Rows.Clear();
-            for (int i = 0; i < list.Length; i++)
             {
-                CarToGrid(list[i]);
+                sort(list);
+                dataGridView1.Rows.Clear();
+                for (int i = 0; i < list.Length; i++)
+                {
+                    CarToGrid(list[i]);
+                }
             }
+            else
+            {
+                MessageBox.Show("Please, choose sort parameters");
+            }
+                
         }
 
 

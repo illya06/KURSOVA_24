@@ -240,10 +240,10 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(1, -1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -527,7 +527,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(5, 86);
+            this.label7.Location = new System.Drawing.Point(5, 98);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(78, 13);
             this.label7.TabIndex = 20;
@@ -590,16 +590,16 @@
             // 
             // border
             // 
-            this.border.Location = new System.Drawing.Point(84, 83);
+            this.border.Location = new System.Drawing.Point(84, 95);
             this.border.Name = "border";
             this.border.Size = new System.Drawing.Size(44, 20);
             this.border.TabIndex = 16;
             // 
             // noRefueling
             // 
-            this.noRefueling.Location = new System.Drawing.Point(22, 124);
+            this.noRefueling.Location = new System.Drawing.Point(25, 133);
             this.noRefueling.Name = "noRefueling";
-            this.noRefueling.Size = new System.Drawing.Size(86, 103);
+            this.noRefueling.Size = new System.Drawing.Size(86, 78);
             this.noRefueling.TabIndex = 18;
             this.noRefueling.Text = "SEEK";
             this.noRefueling.UseVisualStyleBackColor = true;
@@ -608,7 +608,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 34);
+            this.label8.Location = new System.Drawing.Point(6, 46);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(122, 13);
             this.label8.TabIndex = 21;
@@ -617,7 +617,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 60);
+            this.label9.Location = new System.Drawing.Point(6, 72);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(126, 13);
             this.label9.TabIndex = 22;
@@ -627,7 +627,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 285);
+            this.ClientSize = new System.Drawing.Size(596, 285);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";

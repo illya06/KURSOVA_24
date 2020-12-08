@@ -9,6 +9,7 @@ namespace KURSOVA_24
     class Truck: Car
     {
         public int CarType;
+        public int Weight;
         Truck()
         {
             CarType = 1;
