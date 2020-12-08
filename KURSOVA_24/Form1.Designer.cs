@@ -61,23 +61,25 @@
             this.sortByMark = new System.Windows.Forms.Button();
             this.showAll = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.Find = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.lAndT = new System.Windows.Forms.RadioButton();
             this.findLog = new System.Windows.Forms.RichTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.consume = new System.Windows.Forms.RadioButton();
             this.size = new System.Windows.Forms.RadioButton();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.lAndT = new System.Windows.Forms.RadioButton();
+            this.Find = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.border = new System.Windows.Forms.TextBox();
             this.noRefueling = new System.Windows.Forms.Button();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -85,8 +87,8 @@
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -428,15 +430,28 @@
             this.tabPage3.Text = "FIND";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // Find
+            // groupBox4
             // 
-            this.Find.Location = new System.Drawing.Point(89, 86);
-            this.Find.Name = "Find";
-            this.Find.Size = new System.Drawing.Size(113, 34);
-            this.Find.TabIndex = 15;
-            this.Find.Text = "FIND BY";
-            this.Find.UseVisualStyleBackColor = true;
-            this.Find.Click += new System.EventHandler(this.Find_Click);
+            this.groupBox4.Controls.Add(this.lAndT);
+            this.groupBox4.Location = new System.Drawing.Point(67, 94);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(113, 45);
+            this.groupBox4.TabIndex = 19;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Find by :  ";
+            // 
+            // lAndT
+            // 
+            this.lAndT.AutoSize = true;
+            this.lAndT.Checked = true;
+            this.lAndT.Location = new System.Drawing.Point(6, 19);
+            this.lAndT.Name = "lAndT";
+            this.lAndT.Size = new System.Drawing.Size(97, 17);
+            this.lAndT.TabIndex = 13;
+            this.lAndT.TabStop = true;
+            this.lAndT.Text = "light and trucks";
+            this.lAndT.UseVisualStyleBackColor = true;
+            this.lAndT.CheckedChanged += new System.EventHandler(this.lAndT_CheckedChanged);
             // 
             // findLog
             // 
@@ -452,7 +467,7 @@
             // 
             this.groupBox2.Controls.Add(this.consume);
             this.groupBox2.Controls.Add(this.size);
-            this.groupBox2.Location = new System.Drawing.Point(89, 177);
+            this.groupBox2.Location = new System.Drawing.Point(67, 145);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(113, 63);
             this.groupBox2.TabIndex = 18;
@@ -483,31 +498,20 @@
             this.size.UseVisualStyleBackColor = true;
             this.size.CheckedChanged += new System.EventHandler(this.size_CheckedChanged);
             // 
-            // groupBox4
+            // Find
             // 
-            this.groupBox4.Controls.Add(this.lAndT);
-            this.groupBox4.Location = new System.Drawing.Point(89, 126);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(113, 45);
-            this.groupBox4.TabIndex = 19;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Find by :  ";
-            // 
-            // lAndT
-            // 
-            this.lAndT.AutoSize = true;
-            this.lAndT.Checked = true;
-            this.lAndT.Location = new System.Drawing.Point(6, 19);
-            this.lAndT.Name = "lAndT";
-            this.lAndT.Size = new System.Drawing.Size(97, 17);
-            this.lAndT.TabIndex = 13;
-            this.lAndT.TabStop = true;
-            this.lAndT.Text = "light and trucks";
-            this.lAndT.UseVisualStyleBackColor = true;
-            this.lAndT.CheckedChanged += new System.EventHandler(this.lAndT_CheckedChanged);
+            this.Find.Location = new System.Drawing.Point(67, 54);
+            this.Find.Name = "Find";
+            this.Find.Size = new System.Drawing.Size(113, 34);
+            this.Find.TabIndex = 15;
+            this.Find.Text = "FIND BY";
+            this.Find.UseVisualStyleBackColor = true;
+            this.Find.Click += new System.EventHandler(this.Find_Click);
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label9);
+            this.tabPage4.Controls.Add(this.label8);
             this.tabPage4.Controls.Add(this.label7);
             this.tabPage4.Controls.Add(this.dataGridView2);
             this.tabPage4.Controls.Add(this.border);
@@ -520,52 +524,14 @@
             this.tabPage4.Text = "#4";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // border
+            // label7
             // 
-            this.border.Location = new System.Drawing.Point(66, 75);
-            this.border.Name = "border";
-            this.border.Size = new System.Drawing.Size(59, 20);
-            this.border.TabIndex = 16;
-            // 
-            // noRefueling
-            // 
-            this.noRefueling.Location = new System.Drawing.Point(10, 127);
-            this.noRefueling.Name = "noRefueling";
-            this.noRefueling.Size = new System.Drawing.Size(115, 39);
-            this.noRefueling.TabIndex = 18;
-            this.noRefueling.Text = "NO REFUELING";
-            this.noRefueling.UseVisualStyleBackColor = true;
-            this.noRefueling.Click += new System.EventHandler(this.hasAllTypes_Click);
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Consumption";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Fuel tank size";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Horse power";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Car type";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Mark";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(5, 86);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(78, 13);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "MORE THEN :";
             // 
             // dataGridView2
             // 
@@ -592,20 +558,76 @@
             this.dataGridView2.Size = new System.Drawing.Size(426, 249);
             this.dataGridView2.TabIndex = 19;
             // 
-            // label7
+            // dataGridViewTextBoxColumn1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 78);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 13);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "BORDER :";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Mark";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Car type";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Horse power";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Fuel tank size";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "Consumption";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // border
+            // 
+            this.border.Location = new System.Drawing.Point(84, 83);
+            this.border.Name = "border";
+            this.border.Size = new System.Drawing.Size(44, 20);
+            this.border.TabIndex = 16;
+            // 
+            // noRefueling
+            // 
+            this.noRefueling.Location = new System.Drawing.Point(22, 124);
+            this.noRefueling.Name = "noRefueling";
+            this.noRefueling.Size = new System.Drawing.Size(86, 103);
+            this.noRefueling.TabIndex = 18;
+            this.noRefueling.Text = "SEEK";
+            this.noRefueling.UseVisualStyleBackColor = true;
+            this.noRefueling.Click += new System.EventHandler(this.hasAllTypes_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 34);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(122, 13);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "CAR THAT CAN DRIVE";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 60);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(126, 13);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "WITHOUT REFUELING ";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 285);
+            this.ClientSize = new System.Drawing.Size(935, 285);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -619,10 +641,10 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -682,6 +704,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.TextBox border;
         private System.Windows.Forms.Button noRefueling;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
     }
 }
 
