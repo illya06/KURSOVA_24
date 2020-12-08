@@ -258,12 +258,8 @@ namespace KURSOVA_24
             }
             else
             {
-                addLog.Text = "\nWRONG INPUT:" +
-                    "\nfollowing must be digits" +
-                    $"\nType :\n\t{Type.Text}\n" +
-                    $"Power :\n\t{Power.Text}\n" +
-                    $"Fuel Size :\n\t{FS.Text}\n" +
-                    $"Fuel/Km :\n\t{FK.Text}\n";
+                addLog.Text = " ";
+                MessageBox.Show("Inoprrect input");
             }
         }
 

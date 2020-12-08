@@ -305,7 +305,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(588, 261);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "SORT";
+            this.tabPage2.Text = "LOAD/SORT";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // button1
